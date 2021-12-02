@@ -1,0 +1,1 @@
+export const splitByUpperCase = (str) => str.split(/(?=[A-Z])/).join(' ')

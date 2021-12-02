@@ -1,0 +1,7 @@
+$screen-sm: 600px;
+$screen-md: 960px;
+$screen-lg: 1280px;
+
+$max-screen-sm: '(max-width: #{$screen-sm})';
+$max-screen-md: '(max-width: #{$screen-md})';
+$max-screen-lg: '(max-width: #{$screen-lg})';
