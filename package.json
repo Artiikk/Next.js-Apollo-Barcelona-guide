@@ -5,7 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-image": "docker build -t nextapp .",
+    "docker-run": "docker run -d --rm -p 3000:3000 --env-file ./.env.local nextapp",
+    "docker-build": "yarn docker-image && yarn docker-run"
   },
   "dependencies": {
     "@apollo/client": "^3.5.5",

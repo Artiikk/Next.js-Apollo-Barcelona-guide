@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
-import MainLayout from '../../layout/Main'
-import { GET_STATIONS_QUERY } from './queries'
-import { useLazyQuery, useQuery } from '@apollo/client'
+import MainLayout from '@/layout/Main'
+import { GET_STATIONS_QUERY } from '../../utils/queries/getStations'
+import { useLazyQuery } from '@apollo/client'
 import { useRouter } from 'next/router'
-import { routesMap } from '../../utils/helpers/links'
+import { routesMap } from '@/utils/helpers/links'
 import { withIronSessionSsr } from 'iron-session/next'
-import Coordinates from '../../components/pages/Coordinates'
-import Stations from '../../components/pages/Stations'
+import Coordinates from '@/components/pages/Coordinates'
+import Stations from '@/components/pages/Stations'
 import { useFormik } from 'formik'
 
 export default function TransportPage({ user, stations }) {

@@ -1,4 +1,4 @@
-import { numbersOnlyRegExp, latitudeOrLongitudeRegExp } from './regExp'
+import { numbersOnlyRegExp } from './regExp'
 
 export const isOnlyNumber = (value) => numbersOnlyRegExp.test(value)
 
